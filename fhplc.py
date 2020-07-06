@@ -9,15 +9,15 @@ else:
 	import matplotlib.pyplot as plt
 
 #########################################################################################################################################
-#	Script for Knauer ASCII-file input		                        							#
-#	----------------------------------				         							#
+#	Script for Knauer ASCII-file conversion and plotting		                        					#
+#	----------------------------------------------------				         					#
 #										                                            		#
 #	The script converts ASCII-files from EZCHROM into two .txt files (UV and Fluorescence) with time and volume data. Both 		#
 #	curves are plotted and saved as .png file. The script handles two curves, but can be extended to handle more.		    	#
 #											                                                # 
 #	Dependencies: Matplotlib, use without graph output (-nograph) in case.					              		#
 #								                                                    			#
-#	Usage: Copy fhplc.py to folder with ASCII files (.asc) and run script. Only files within the same folder will be processed. 	#
+#	Usage: Execute fhplc.py in folder with ASCII files (.asc). 							 		#
 #													                		#
 #	Essential arguments:	-f flow rate in ml/min (i.e. "python fhplc.py -f 0.25")					                #
 #	Optional arguments: 	-notxt (no .txt file output) 		            							#
