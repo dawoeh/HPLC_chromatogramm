@@ -6,15 +6,19 @@ from lmfit.models import GaussianModel, ExponentialModel
 import matplotlib.pyplot as plt
 import timeit
 
-#####################################################################################################################################
-#	Script for Knauer ASCII-file input																								#
-#	----------------------------------																								#
-#																																	#
-#	The script fits 4 gaussian curves to the data. It depends on matplotlib as well as lmfit. Change the parameters for the fit as  #
-#	needed. Fits are output as png-files in a separate folder. The Area below peak 2 is calculated.									#
-#   Arguments: 	-f 0.2 (flowrate in ml/min, essential)																				#
-#				-dpi 200 (200 default, higher possible, optional)																	#								
-#####################################################################################################################################
+#########################################################################################################################################
+#	Script for Knauer ASCII-file input												#
+#	----------------------------------												#
+#																	#
+#	The script fits 4 gaussian curves to the data. It depends on matplotlib and lmfit. Change the parameters for the fit as  	#
+#	needed. Fits are output as png-files in a separate folder. The Area below peak 2 is calculated and written into a single	#
+#	txt-file for all input .asc files.												#
+#																	#
+#	Execute in folder with EZCHROM ASCII-files. Center and sigma of individual peaks should be modified in the script.		#
+#																	#
+#   	Arguments: 	-f 0.2 (flowrate in ml/min, essential)										#
+#			-dpi 200 (200 default, higher possible, optional)								#								
+#########################################################################################################################################
 
 start_time=timeit.default_timer()
 
